@@ -1,58 +1,12 @@
-MANIFEST
-build
-dist
-_build
-docs/man/*.gz
-docs/source/api/generated
-docs/source/config.rst
-docs/gh-pages
-notebook/i18n/*/LC_MESSAGES/*.mo
-notebook/i18n/*/LC_MESSAGES/nbjs.json
-notebook/static/components
-notebook/static/style/*.min.css*
-notebook/static/*/js/built/
-notebook/static/*/built/
-notebook/static/built/
-notebook/static/*/js/main.min.js*
-notebook/static/lab/*bundle.js
-node_modules
-*.py[co]
-__pycache__
-*.egg-info
-*~
-*.bak
-/.ipynb_checkpoints
-.tox
-.DS_Store
-\#*#
-.#*
-.coverage
-.pytest_cache
-src
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
 
-*.swp
-*.map
-.idea/
-Read the Docs
-config.rst
-*.iml
-/.project
-/.pydevproject
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
 
-package-lock.json
-geckodriver.log
-*.iml
+# IPython
+profile_default/
+ipython_config.py
 
-# jetbrains IDE stuff
-*.iml
-.idea/
-
-# ms IDE stuff
-*.code-workspace
-.history
-.vscode
-
-# copied changelog
-docs/source/changelog.md
-
-.jupyter_releaser_checkout
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
